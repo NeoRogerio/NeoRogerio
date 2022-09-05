@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+
+h1 {
+    color: #000009;
+    font-family: Calibri, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.p,
+p {
+    color: #000009;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+    margin: 0pt;
+}
+
+.s1 {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.s3 {
+    color: #FFF;
+    font-family: Calibri, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.s4 {
+    color: #000009;
+    font-family: Calibri, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.s5 {
+    color: black;
+    font-family: Calibri, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.s6 {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+h2 {
+    color: #000009;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+li {
+    display: block;
+}
+
+#l1 {
+    padding-left: 0pt;
+    counter-reset: c1 1;
+}
+
+#l1>li>*:first-child:before {
+    counter-increment: c1;
+    content: counter(c1, decimal)". ";
+    color: #000009;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+#l1>li:first-child>*:first-child:before {
+    counter-increment: c1 0;
+}
+
+li {
+    display: block;
+}
+
+#l2 {
+    padding-left: 0pt;
+    counter-reset: d1 1;
+}
+
+#l2>li>*:first-child:before {
+    counter-increment: d1;
+    content: counter(d1, lower-latin)") ";
+    color: #000009;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+#l2>li:first-child>*:first-child:before {
+    counter-increment: d1 0;
+}
+
+li {
+    display: block;
+}
+
+#l3 {
+    padding-left: 0pt;
+}
+
+#l3>li>*:first-child:before {
+    content: "• ";
+    color: #000009;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+table,
+tbody {
+    vertical-align: top;
+    overflow: visible;
+}
+@media print {
+    .page-break { 
+        height: 0; 
+        page-break-before: always; 
+        margin: 0; 
+        border-top: none; 
+    }
+}
+
+body, p, a,
+span, td { 
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-left: 2em; 
+    margin-right: 2em;
+}
+
+.page {
+    height: 947px;
+    padding-top: 5px;
+    page-break-after: always;   
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    border-bottom: 1px solid #000;
+}
